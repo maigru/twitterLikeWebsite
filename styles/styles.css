@@ -1,0 +1,184 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainWrapper {
+  display: flex;
+  height: 100vh;
+}
+
+i {
+  display: flex;
+  align-items: center;
+  color: gray;
+  font-size: 26px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.iconLink {
+  padding: 0.2em;
+}
+.iconLink:hover,
+.iconLink:active {
+  border-radius: 0.5em;
+  background-color: lightgray;
+}
+.textLink:hover,
+.textLink:active {
+  text-decoration: underline;
+}
+
+button {
+  border: transparent solid 1px;
+  border-radius: 0.5em;
+  background-color: transparent;
+}
+button:hover,
+button:active {
+  background-color: lightgray;
+}
+
+.sidebar {
+  background-color: darkslategray;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    margin-bottom: 2em;
+    border: transparent solid 1px;
+    padding: 5px;
+    font-size: 40px;
+  }
+  a:hover,
+  a:active {
+    border: lightgray solid 1px;
+    border-radius: 10px;
+    i {
+      color: lightgray;
+    }
+  }
+  i {
+    font-size: 40px;
+    color: white;
+  }
+}
+
+.postWrapper {
+  padding: 1em;
+  max-width: 60%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.errorText {
+  color: darkred;
+  font-size: 12px;
+  margin-right: auto;
+}
+
+.postCard {
+  min-width: 400px;
+  padding: 1em;
+  border: lightgray solid 1px;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  .rightAlignEl {
+    margin-left: auto;
+  }
+  .cardRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+  .cardBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .postSubmit {
+      margin-top: 0.5em;
+      aspect-ratio: 1/1;
+      padding: 0.2em;
+    }
+    .txtar {
+      width: 100%;
+      border: none;
+      padding: 0;
+      border-bottom: lightgray solid 1px;
+      resize: none;
+      outline: none;
+      font-size: 14px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      height:fit-content;
+    }
+  }
+  .dateTime {
+    font-size: 12px;
+  }
+}
+
+.separator {
+  background-color: lightgray;
+  height: 1px;
+  margin: 0.5em 0em;
+}
+
+.formWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .formFlex {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    padding: 1em 2em;
+    min-width: 275px;
+    border: lightgray solid 1px;
+    border-radius: 0.5em;
+    .formItem {
+      margin-top: 1em;
+      padding: 1em;
+      width: 100%;
+      border: lightgray solid 1px;
+      border-radius: 0.5em;
+      font-size: 16px;
+    }
+    .formButton {
+      width: 50%;
+      margin-bottom: 0.5em;
+    }
+    .formHeadline {
+      font-size: 20px;
+    }
+  }
+}
+
+.signUpBody {
+  background-color: darkslategray;
+}
+
+.hiddendiv {
+  display: none;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  order: 0;
+}
